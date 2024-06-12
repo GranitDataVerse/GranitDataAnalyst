@@ -6,20 +6,54 @@
 -->
 <html>
 	<head>
-		<title>Strata by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+	    <title>Strata by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
+
+    <!-- Custom styles for the modal -->
+    <style>
+        .modal-content {
+            background-color: #a7b2c0;
+            color: #212529;
+        }
+
+        .modal-header {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .modal-body {
+            padding: 20px;
+        }
+
+        .modal-footer {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .modal-header .btn-close {
+            color: #000;
+        }
+    </style>
+	</head>
+	<body> class="is-preload">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio</title>
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1><strong>I am Granit Elshani</strong>, a super simple<br />
-					responsive site template freebie<br />
-					crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+					<a href="#" class="image avatar"><img src="images/profile.jpg" alt="" /></a>
+					<h1><strong>I am Granit Elshani</strong><br />
+						Data Analyst Skilled in SQL, SPSS, Tableau & Market Research Specialist<br />
 				</div>
 			</header>
 
@@ -29,15 +63,39 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
+							<h2>Welcome to my Portfolio</h2>
 						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<p>Discover data insights from someone truly passionate about data. With 6 years of experience working with diverse datasets at Ipsos Market Research, I'm dedicated to continuously exploring and mastering new tools to unlock the full potential of data.
+
+							<br><br>Join me on a journey where we turn numbers into actionable insights. Explore my portfolio to see how we can make your data work smarter for you.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li>
+								<a id="learn-more-button" class="button" onclick="openModal()">Learn More</a>
+							  </li>
 						</ul>
 					</section>
+					<div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-xl">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="learnMoreModalLabel">Modal title</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								Hello, my name is Granit Elshani, and I'm a highly motivated data-driven professional with a Master's Degree in Banking and Finance. Recently, I completed the Google Data Analytics course on Coursera, enhancing my skills in data analysis tools like SQL, SPSS, Python, and visualization tools.<br>
 
+								<br>My professional journey began at Ipsos Market Research, where I spent six years working with databases on various topics such as health, finance, and open-ended responses that required survey coding for insights. During my time at Ipsos, I held three different positions, but my primary role was as a Data Analyst.<br>
+								
+								<br>As a Field Manager, I ensured that data collection processes ran smoothly, and as an Assistant Project Manager, I oversaw projects from start to finish, ensuring all tasks were completed successfully. I collaborated with companies and organizations such as Coca Cola, the European Union, British American Tobacco, Philip Morris, UNDP, and USAID, ensuring that data quality and collection were done in the right way.<br>
+								
+								<br>I hope you enjoy exploring the projects in my portfolio, which showcase my passion for data analysis and management.
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					  </div>															  
 				<!-- Two -->
 					<section id="two">
 						<h2>Recent Work</h2>
@@ -81,7 +139,9 @@
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
-						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<p>I would love to hear from you! 
+							<br><br>Whether you have feedback, questions, or ideas for collaboration, feel free to reach out. Your input is valuable, and I'm always open to new connections and projects. 
+							<br><br>I'll get back to you as soon as possible. Let's connect and see how we can work together.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
 								<form method="post" action="#">
@@ -99,17 +159,17 @@
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
+										7220 South 88th st<br />
+										Lincoln, NE 68526<br />
 										United States
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
+										+1 402-640-0677
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
+										<a href="#">elsgranit@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -458,6 +518,28 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#openModalBtn").click(function () {
+      $("#learnMoreModal").modal('show');
+    });
+
+    $('#learnMoreModal').on('hidden.bs.modal', function () {
+      // This line is not needed, as the 'click' event handler is automatically removed when the modal is hidden
+      // $(this).off('click');
+    });
+  });
+</script>
+<script>
+    function openModal() {
+        $("#learnMoreModal").modal('show');
+    }
+</script>
 
 	</body>
 </html>
