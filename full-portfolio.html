@@ -51,8 +51,8 @@
 </head>
 <body>
     <div>
-        <h2>Full Portfolio</h2>
-        <p>Welcome to my full portfolio. Here, you can find detailed information about my projects and achievements. Feel free to explore and reach out if you have any questions or would like to collaborate.</p>
+        <h2>Comments</h2>
+        <p>Here, you'll discover detailed visualizations with commentary. Feel free to explore insights that catch your interest or share your interpretations with me. I'm always open to connecting and collaborating on new ideas.</p>
         <div class="container">
             <div class="work-item">
                 <div class="image">
@@ -100,6 +100,59 @@
 <br><br>In conclusion, this project highlights the transformative power of human-centered data analysis in shaping HR strategies. By delving beyond the numbers and into the stories they tell, organizations can make more informed decisions that benefit both employees and the organization. It is a testament to the profound impact of data-driven approaches in shaping the future of workforces.
 </p>
     </div>
+</div>
+</div>
+    <div class="container">
+        <div class="work-item">
+            <div class="image">
+                <a href="#" class="image fit thumb"><img src="images/Number of Dams per State.png" alt="" id="expandableImage3"/></a>
+            </div>
+            <div class="text">
+                <h3>Dam Density Analysis</h3>
+    
+
+                <p>This interactive map shows the density of dams across the United States, providing a visual representation of the number of dams per state. The states of the Midwest, including Kansas, Oklahoma, and Texas, have a high number of dams, followed by the East Coast, which also shows significant dam presence. The West Coast, on the other hand, has a lower number of dams in comparison. This disparity can be attributed to various factors such as geographical features, availability of water resources, and historical infrastructure development.<br><br>
+
+                    The concentration of dams in the Midwest can be linked to the region's extensive agricultural activities, which require substantial water management and irrigation systems. The East Coast's dam density is influenced by its early industrialization and the need for flood control in densely populated areas. In contrast, the West Coast's lower dam count is partly due to its rugged terrain and stringent environmental regulations.<br><br>
+                    
+                    To better understand the factors influencing the number of dams per state, I've created another visualization showing the number of dams per square mile of water area. This second visual helps to clarify how water resources and geographical features impact dam distribution across different regions. By analyzing dam density relative to water area, we gain insights into the efficiency of water resource management and the environmental considerations in each state.<br><br>
+                    
+                    These visualizations provide a comprehensive overview of dam distribution and highlight the regional differences in water management strategies across the United States. They also underscore the importance of considering both geographical and socio-economic factors when planning and implementing water infrastructure projects.<br><br>
+                </p>
+</div>
+</div>
+</div>
+                <div class="container">
+                <div class="work-item">
+                    <div class="image">
+                        <a href="#" class="image fit thumb"><img src="images/Number of Dams per Square mile of water area.png" alt="" id="expandableImage4"/></a>
+                    </div>
+                    <div class="text">
+                        <h3>Dam Density Analysis</h3>
+            
+            
+                        <p><strong>Exploring Dam Density Across the United States</strong>
+
+                            Water is vital for life and the economy, making the management of water resources crucial. The "Number of Dams per Square Mile of Water Area" visualization provides a unique look at how states across the U.S. manage their water through dam infrastructure.<br><br>
+                            
+                            <strong>Insights into Water Management</strong>
+                            
+                            States like Nebraska, Kansas, Missouri, and Iowa stand out with a high density of dams per square mile of water area. This indicates a strong reliance on dams for various purposes such as irrigation, flood control, and water supply, particularly to support agriculture and industry.<br><br>
+                            
+                            <strong>Environmental Factors and Infrastructure</strong>                            
+                            Conversely, states along the West Coast not only have the lowest number of dams but also the lowest density of dams per square mile of water area. This is due to the region's rugged terrain and strict environmental regulations, which pose challenges for balancing water infrastructure development with environmental conservation.<br><br>
+                            
+                            <strong>Sustainability and Future Planning</strong>
+                            
+                            This visualization helps us understand how different states manage their water resources and highlights the importance of sustainable water management practices. As water demand increases and environmental pressures grow, insights from this visualization can inform future water infrastructure planning to ensure sustainable water management for generations to come.<br><br>
+                        </p>
+            </div>
+            </div>
+            </div>
+            </p>
+</div>
+</div>
+</div>
     <script>
         const img = document.getElementById('expandableImage');
         img.addEventListener('click', () => {
@@ -110,13 +163,21 @@
             }
         });
         const img2 = document.getElementById('expandableImage2');
-img2.addEventListener('click', () => {
-    if (img2.classList.contains('fullscreen')) {
-        img2.classList.remove('fullscreen');
-    } else {
-        img2.classList.add('fullscreen');
-    }
-});
+        img2.addEventListener('click', () => {
+            if (img2.classList.contains('fullscreen')) {
+                img2.classList.remove('fullscreen');
+            } else {
+                img2.classList.add('fullscreen');
+            }
+        });
+        const img3 = document.getElementById('expandableImage3');
+        img3.addEventListener('click', () => {
+            if (img3.classList.contains('fullscreen')) {
+                img3.classList.remove('fullscreen');
+            } else {
+                img3.classList.add('fullscreen');
+            }
+        });
     </script>
 </body>
 </html>
