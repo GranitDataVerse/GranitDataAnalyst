@@ -20,6 +20,21 @@
 		<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
 		<!-- Custom styles for the modal -->
 		<style>
+			.button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #5c50fd; /* Change this to your desired color */
+    color: #ffffff  !important; /* Text color */
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9; /* Darker shade of your color on hover */
+}
 			.section-title h8 {
     font-size: 1.5em; /* Adjust font size for the first title */
     margin-bottom: 5px; /* Small bottom margin */
@@ -147,7 +162,7 @@
 					<h1><strong>I am Granit Elshani</strong><br />
 						Data Analyst Skilled in SQL, SPSS, Tableau & Market Research Specialist<br />
 						<a href="images/Coursera.JPG" class="image fit thumb special" data-lightbox="image-1">
-							<img src="images/Coursera.JPG" alt="Coursera Image" style="height: 295px; width: auto;" />
+							<img src="images/Coursera.JPG" alt="Coursera Image" style="height: 400px; width: auto;" />
 						</a>
 					</h1>						
 				</div>
@@ -169,6 +184,7 @@
         <ul class="actions">
             <li>
                 <a id="learn-more-button" class="button" onclick="openModal()">Learn More</a>
+				<a id="Resume" class="button" href="Resume Granit Elshani.pdf" download onclick=>Resume</a>
             </li>
         </ul>
     </div>
